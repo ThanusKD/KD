@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <h1>AI INTERIOR DESIGNER</h1>
+            <p>Imagine having an AI assistant that understands your vision and brings it to life. With our AI Interior Designer, you can effortlessly create a personalized interior design plan for any room, tailored to your style and preferences. Simply input your room type, size, and preferred furniture style, and let our cutting-edge AI generate a stunning, photorealistic 2D floor plan—just like an expert designer would.</p>
+            <button class="Generate_Design">Generate design</button>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>Room Type</h2>
+                <select class="input-field" name="roomType" id="roomType">
+                    <option value="">Select Room Type</option>
+                    <option value="livingRoom">Living Room</option>
+                    <option value="bedroom">Bedroom</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="bathroom">Bathroom</option>
+                    <option value="office">Home Office</option>
+                    <option value="diningRoom">Dining Room</option>
+                    <option value="playroom">Playroom</option>
+                    <option value="studyRoom">Study Room</option>
+                </select>
+            </div>
+            
+            <div class="stat-card">
+                <h2>Dimensions</h2>
+                <div class="dimension-inputs">
+                    <input type="number" class="input-field" placeholder="Length (feet)" id="length">
+                    <input type="number" class="input-field" placeholder="Width (feet)" id="width">
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <h2>Furniture</h2>
+                <input type="text" 
+                       class="input-field" 
+                       id="furniture" 
+                       name="furniture" 
+                       placeholder="Enter furniture items (e.g., Sofa, Chair, Table, Bed)"
+                >
+            </div>
+            
+            <div class="stat-card">
+                <h2>Style</h2>
+                <select class="input-field" name="style" id="style">
+                    <option value="">Select Style</option>
+                    <option value="modern">Modern</option>
+                    <option value="traditional">Traditional</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="scandinavian">Scandinavian</option>
+                    <option value="bohemian">Bohemian</option>
+                    <option value="contemporary">Contemporary</option>
+                    <option value="rustic">Rustic</option>
+                    <option value="midCentury">Mid-Century Modern</option>
+                </select>
+            </div>
+        <script src="/static/script.js"></script>
+        </section>
